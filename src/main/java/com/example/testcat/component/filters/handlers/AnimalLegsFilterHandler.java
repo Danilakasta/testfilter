@@ -27,8 +27,6 @@ public class AnimalLegsFilterHandler implements FilterHandler {
         return animal -> animal.getLegsCount().equals(filter.getLegsCount());
     }
 
-
-
     @Override
     public List<AnimalAbstract> filter(List<AnimalAbstract> animals, AnimalFilter filter) {
         return getStrategy().filter(animals, this.condition(filter));

@@ -11,7 +11,6 @@ public class StreamFilterStrategy implements AnimalFilterStrategy{
     @Override
     public List<AnimalAbstract> filter(List<AnimalAbstract> animals, Predicate<AnimalAbstract> filterPredicate) {
         return animals.stream()
-              //  .filter(AnimalAbstract::check)
                 .filter(filterPredicate)
                 .collect(Collectors.toList());
     }

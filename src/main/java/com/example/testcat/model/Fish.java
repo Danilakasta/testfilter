@@ -1,7 +1,9 @@
 package com.example.testcat.model;
 
 import com.example.testcat.enums.AnimalGroups;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.Data;
 import lombok.ToString;
 

@@ -4,7 +4,6 @@ package com.example.testcat.controllers;
 import com.example.testcat.model.Animal;
 import com.example.testcat.model.AnimalAbstract;
 import com.example.testcat.model.Cat;
-import com.example.testcat.model.Dog;
 import com.example.testcat.service.animal.AnimalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

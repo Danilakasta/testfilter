@@ -1,8 +1,6 @@
 package com.example.testcat.component.filters.strategy;
 
 import com.example.testcat.model.AnimalAbstract;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
