@@ -1,9 +1,9 @@
 package com.example.testcat.controllers;
 
-import com.example.testcat.component.filters.chains.AnimalFilterable;
 import com.example.testcat.model.AnimalAbstract;
 import com.example.testcat.model.filters.AnimalFilter;
 import com.example.testcat.service.animal.AnimalService;
+import com.example.testcat.service.filter.FilterAnimalService;
 import com.example.testcat.service.filter.FilterAnimalServiceSmell;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,15 +16,12 @@ import java.util.List;
 @RequestMapping
 public class AnimalController {
     private final AnimalService animalService;
-    private final FilterAnimalServiceSmell filterAnimalService;
-
-    private final AnimalFilterable animalFilterable;
+    private final FilterAnimalService filterAnimalService;
 
     @Autowired
-    public AnimalController(AnimalService animalService, FilterAnimalServiceSmell filterAnimalService, AnimalFilterable animalFilterable) {
+    public AnimalController(AnimalService animalService, FilterAnimalService filterAnimalService) {
         this.animalService = animalService;
         this.filterAnimalService = filterAnimalService;
-        this.animalFilterable = animalFilterable;
     }
 
     @GetMapping("animals")
@@ -42,6 +39,6 @@ public class AnimalController {
     @GetMapping("filter/animals")
     public List<AnimalAbstract> filterAnimals(AnimalFilter filter) {
 
-        return animalFilterable.filtrate(animalService.getAnimals(), filter);
+        return filterAnimalService.getFilterAnimal(filter);
     }
 }

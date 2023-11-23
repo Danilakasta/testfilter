@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Service
-public class FilterAnimalServiceSmell {
+//@Service
+public class FilterAnimalServiceSmell implements FilterService {
 
     private final AnimalService animalService;
 
@@ -19,6 +19,8 @@ public class FilterAnimalServiceSmell {
         this.animalService = animalService;
     }
 
+
+    @Override
     public List<AnimalAbstract> getFilterAnimal(AnimalFilter filter) {
         List<AnimalAbstract> animals = animalService.getAnimals();
 
