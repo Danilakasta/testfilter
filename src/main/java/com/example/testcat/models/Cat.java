@@ -1,4 +1,4 @@
-package com.example.testcat.model;
+package com.example.testcat.models;
 
 import com.example.testcat.enums.AnimalGroups;
 import jakarta.persistence.Entity;
@@ -10,10 +10,10 @@ import lombok.ToString;
 @Data
 @Entity
 @ToString
-public class Dog extends AnimalAbstract {
+public class Cat extends AnimalAbstract {
 
 
-    //TODO 1.1 Добавить остальные отличные свойства собак
+    //TODO 1.1 Добавить остальные отличные свойства
 
     @Enumerated(EnumType.STRING)
     private AnimalGroups animalGroups = AnimalGroups.MAMMALS;
@@ -21,7 +21,7 @@ public class Dog extends AnimalAbstract {
     @Override
     public String
     say() {
-        return "Гав";
+        return "Мяу кусок шерсти";
     }
 
 }

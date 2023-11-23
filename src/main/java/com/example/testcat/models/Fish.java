@@ -1,4 +1,4 @@
-package com.example.testcat.model;
+package com.example.testcat.models;
 
 import com.example.testcat.enums.AnimalGroups;
 import jakarta.persistence.Entity;

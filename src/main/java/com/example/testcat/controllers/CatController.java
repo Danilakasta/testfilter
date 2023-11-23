@@ -1,10 +1,10 @@
 package com.example.testcat.controllers;
 
 
-import com.example.testcat.model.Animal;
-import com.example.testcat.model.AnimalAbstract;
-import com.example.testcat.model.Cat;
-import com.example.testcat.service.animal.AnimalService;
+import com.example.testcat.models.Animal;
+import com.example.testcat.models.AnimalAbstract;
+import com.example.testcat.models.Cat;
+import com.example.testcat.services.animal.AnimalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;

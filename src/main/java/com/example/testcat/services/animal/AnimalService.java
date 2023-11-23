@@ -1,7 +1,7 @@
-package com.example.testcat.service.animal;
+package com.example.testcat.services.animal;
 
-import com.example.testcat.model.Animal;
-import com.example.testcat.model.AnimalAbstract;
+import com.example.testcat.models.Animal;
+import com.example.testcat.models.AnimalAbstract;
 
 import java.util.List;
 

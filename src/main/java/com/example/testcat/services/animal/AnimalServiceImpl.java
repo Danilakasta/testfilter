@@ -1,8 +1,8 @@
-package com.example.testcat.service.animal;
+package com.example.testcat.services.animal;
 
-import com.example.testcat.model.Animal;
-import com.example.testcat.model.AnimalAbstract;
-import com.example.testcat.repository.AnimalRepository;
+import com.example.testcat.models.Animal;
+import com.example.testcat.models.AnimalAbstract;
+import com.example.testcat.repositories.AnimalRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

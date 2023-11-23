@@ -1,4 +1,4 @@
-package com.example.testcat.service;
+package com.example.testcat.services;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

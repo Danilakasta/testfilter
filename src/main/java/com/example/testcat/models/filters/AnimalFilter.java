@@ -1,6 +1,6 @@
-package com.example.testcat.model.filters;
+package com.example.testcat.models.filters;
 
-import com.example.testcat.model.AnimalAbstract;
+import com.example.testcat.models.AnimalAbstract;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
