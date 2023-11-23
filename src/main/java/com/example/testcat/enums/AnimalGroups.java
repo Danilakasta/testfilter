@@ -15,5 +15,5 @@ public enum AnimalGroups {
     AMPHIBIANS("Земноводные"),
     ARTHROPODS("Членистоногие.");
 
-    private String type;
+    private final String type;
 }

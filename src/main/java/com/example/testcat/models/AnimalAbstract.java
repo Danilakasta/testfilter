@@ -37,8 +37,4 @@ public class AnimalAbstract implements Animal {
     }
 
 
-//    public static boolean check(AnimalAbstract animalAbstract) {
-//        return animalAbstract != null;
-//    }
-
 }

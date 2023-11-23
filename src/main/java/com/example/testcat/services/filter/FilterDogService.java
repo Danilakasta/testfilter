@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class FilterAnimalService implements FilterService {
+public class FilterDogService implements FilterService {
 
     private final AnimalService animalService;
     private final AnimalFilterComponent filterComponent;
 
-    public FilterAnimalService(AnimalService animalService, AnimalFilterComponent filterComponent) {
+    public FilterDogService(AnimalService animalService, AnimalFilterComponent filterComponent) {
         this.animalService = animalService;
         this.filterComponent = filterComponent;
     }
@@ -26,5 +26,4 @@ public class FilterAnimalService implements FilterService {
 
         return animals;
     }
-
 }
